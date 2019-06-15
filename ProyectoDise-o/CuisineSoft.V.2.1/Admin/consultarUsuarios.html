@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Animated.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="../bt4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../fonts.css">
+  <!-- Estilos Propios -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Consulta Usuarios</title>
+</head>
+
+<body>
+  <div class="">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="../img/logoCuisine.png" width="28" height="30" class="d-inline-block align-top" alt="">
+        CuisineSoft
+      </a>
+      <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse font-weight-bold" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-4">
+          <a class="nav-item nav-link" href="#">Inicio</a>
+          <a class="nav-item nav-link" href="./userRegister.html">Registrar Usuario</a>
+          <a class="nav-item nav-link text-primary active" href="./consultarUsuarios.html">Consultar Usuarios</a>
+        </div>
+        <div class="navbar-nav text-right text-uppercase">
+          <a class="nav-item nav-link" href="../login.html">Cerrar Sesion</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="" id="cuerpo">
+    <div class="container-fluid img d-flex justify-content-center align-items-center div-img" style="margin-top: 56px">
+      <h1 class="text-light">Consulta Usuarios</h1>
+    </div>
+    <div class="container">
+      <br>
+      <form>
+        <!------------Busqueda de Usuarios------------>
+        <h1 class="text-center">Busqueda</h1>
+        <div class="row my-3">
+          <div class="input-group my-2 col-sm-12 col-md-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Codigo</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="button" id="">Buscar</button>
+            </div>
+          </div>
+          <div class="input-group my-2 col-sm-12 col-md-6">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-primary" type="button" id="">Buscar</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="">Documento</span>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!------------------Tabla Usuarios------------------>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover table-info">
+            <caption class="text-center">Tabla - Usuarios Registrados</caption>
+            <thead class="bg-dark text-light">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Documento</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Timmy Turner</td>
+                <td>1025369487</td>
+                <td>Jefe de Cocina</td>
+                <td>Activo</td>
+                <td>3652148</td>
+                <td>example@example.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Homero Simpson</td>
+                <td>1025142872</td>
+                <td>Jefe de Zona</td>
+                <td>Activo</td>
+                <td>6251485</td>
+                <td>example@example.com</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">3</th>
+                <td>Michael Jackson Hee Hee</td>
+                <td>1015247666</td>
+                <td>Jefe de Cocina</td>
+                <td>Inactivo</td>
+                <td>4751245</td>
+                <td>example@example.com</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">4</th>
+                <td>Freddie Mercury Eo Eo</td>
+                <td>1036579555</td>
+                <td>Jefe de Zona</td>
+                <td>Inactivo</td>
+                <td>4551627</td>
+                <td>example@example.com</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Pepito Peréz</td>
+                <td>1152425142</td>
+                <td>Jefe de Cocina</td>
+                <td>Activo</td>
+                <td>6589587</td>
+                <td>example@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+      <h2 class="text-center">Inactivar Usuario</h2>
+      <hr>
+      <div class="row mb-5 mt-4">
+        <div class="col-sm-12 col-md-6">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="codigoSpan">Codigo Usuario</span>
+            </div>
+            <input id="codigo" type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+          <button id="btnInactivar" type="submit" class="btn btn-outline-danger my-2 my-md-0 col-6">Inactivar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="../bt4/js/bootstrap.min.js"></script>
+  <script src="./js/animateAdmin.js"></script>
+</body>
+
+</html>

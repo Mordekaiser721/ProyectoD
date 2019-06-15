@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CDNs ... -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="../bt4/css/bootstrap.min.css">
+  <!-- Estilos Propios -->
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/formularios.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="../fonts.css">
+  <title>CuisineSoft - Solicitar Prestamo</title>
+</head>
+
+<body>
+  <div class="" id="cuerpo">
+    <!--------------Header-------------->
+    <header class="main-header">
+      <div class="container container--flex">
+        <div class="logo-container column--50">
+          <h1 class="logo">CuisineSoft</h1>
+        </div>
+        <div class="main-header__contactInfo column column--50">
+          <p class="main-header__contactInfo__phone">
+            <span class="icon-phone">333-333-333</span>
+          </p>
+          <p class="main-header__contactInfo__address">
+            <span class="icon-location">Calle 82 No 12-21 Zona Rosa</span>
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-------------Banner------------->
+    <section class="banner">
+      <img src="../img/bannerRPedido.jpg" alt="" class="banner__img">
+      <div class="banner__content">Has los pedidos del restaurante facil y rapido</div>
+    </section>
+    <!---------------Nav--------------->
+    <div class="header--nav" id="menu">
+      <div class="menu_bar" id="menu_bar">
+        <a class="bt-menu"><span id="icon_menu" class="icon-menu"></span>Menú</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html"><span id="icon-btn-menu" class="icon-home"></span>Inicio</a></li>
+          <li class="submenu" id="submenu1">
+            <a><span class="icon-file-text"></span>Merma<span id="iconAbajo1" class="icon-circle-down"></span></a>
+            <ul class="children1">
+              <li><a href="./registrarMerma.html">Registrar Merma</span></a></li>
+              <li><a href="./consultarRMerma.html">Consultar Registros</span></a></li>
+            </ul>
+          </li>
+          <li class="submenu" id="submenu2">
+            <a><span class="icon-file-text2"></span>Stock<span id="iconAbajo2" class="icon-circle-down"></span></a>
+            <ul class="children2">
+              <li><a href="./registrarStock.html">Registrar Stock</a></li>
+              <li><a href="./registrarVenta.html">Registrar Venta</a></li>
+            </ul>
+          </li>
+          <li class="submenu" id="submenu3">
+            <a><span class="icon-spoon-knife"></span>Menaje<span id="iconAbajo3" class="icon-circle-down"></span></a>
+            <ul class="children3">
+              <li><a href="./registrarEvent.html">Registrar Eventualidad</a></li>
+              <li><a href="./solicitarPrestamo.html">Solicitar Prestamo</a></li>
+            </ul>
+          </li>
+          <li class="submenu" id="submenu4">
+            <a><span class="icon-pacman"></span>Almuerzos<span id="iconAbajo4" class="icon-circle-down"></span></a>
+            <ul class="children4">
+              <li><a href="./registrarAlmuerzo.html">Registrar Almuerzo</a></li>
+            </ul>
+          </li>
+          <div class="enlace-right">
+            <li><a href="../login.html"><span class="icon-exit"></span>Salir</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <!--------------Main-------------->
+    <main class="main">
+      <section class="group group--color">
+        <div class="container">
+          <h2 class="main__title">Solicitar Prestamo</h2>
+        </div>
+      </section>
+      <!---------Formulario Registro--------->
+      <section class="mt-2">
+        <div class="container container--flex">
+          <form action="" class="formulario">
+            <h2 class="form__title">Formulario</h2>
+            <div class="c-l-i d-50">
+              <label for="idProducto">ID Producto</label>
+              <input type="text" name="idProducto" id="idProducto" placeholder="ID">
+            </div>
+            <div class="c-l-i d-50">
+              <label for="cantidad">Cantidad</label>
+              <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
+            </div>
+            <div class="c-l-i d-50">
+              <label for="fecha">Fecha Prestamo</label>
+              <input type="date" name="fecha" id="fecha">
+            </div>
+            <div class="c-l-i d-50">
+              <label for="fecha">Fecha Devoliucion</label>
+              <input type="date" name="fecha" id="fecha">
+            </div>
+            <div class="c-l-i">
+              <label for="motivo">Descripcion</label>
+              <textarea class="areaT" name="motivo" id="motivo" cols="30" rows="10"
+                placeholder="Breve Descripcion"></textarea>
+            </div>
+            <input type="submit" value="Solicitar" class="btnRegistrar mt-3">
+          </form>
+        </div>
+      </section>
+      <hr>
+      <!-------------Alertas------------->
+      <div class="container mt-2 table-responsive">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h3>Buscar Prestamo</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="row d-flex justify-content-around">
+            <div class="col-5 mb-3 border-right">
+              <input type="text" class="form-control" placeholder="Codigo" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-success" type="button" id="">Buscar</button>
+              </div>
+            </div>
+            <div class="col-5 mb-3 border-left">
+              <input type="text" class="form-control" placeholder="Producto" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-success" type="button" id="">Buscar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!--Alertas Pedidos-->
+        <div class="row d-flex justify-content-around">
+          <div class="alert text-center alert-secondary col-md-5 d-flex" role="alert">
+            <div class="row">
+              <div class="col-12 py-2"><strong>Solicitud #221</strong></div>
+              <div class="col-12 py-1">100 - Platos - 12/04/2019</div>
+              <div class="col-12 py-2">
+                <div class="row justify-content-around align-items-center">
+                  <div class="col-7 alert alert-light text-dark mb-0">
+                    En Espera
+                  </div>
+                  <div class="col-4">
+                    <button class="btn btn-outline-danger p-0">Cancelar Solicitud</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alert text-center alert-success col-md-5 d-flex" role="alert">
+            <div class="row">
+              <div class="col-12 py-2"><strong>Solicitud #222</strong></div>
+              <div class="col-12 py-1">Sillas - 80 - 12/04/2019</div>
+              <div class="col-12 py-2">
+                <div class="alert alert-dark text-success py-0">
+                  Confirmado
+                </div>
+                <div>
+                  <p class="mb-0">
+                    Por favor dirigirse a la planta por el Menaje
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alert text-center alert-danger col-md-5 d-flex" role="alert">
+            <div class="row">
+              <div class="col-12 py-2"><strong>Solicitud #223</strong></div>
+              <div class="col-12 py-1">Mesas - 50 - 12/04/2019</div>
+              <div class="col-12 py-2">
+                <div class="alert alert-dark text-danger py-0">
+                  Negado
+                </div>
+                <div>
+                  <p class="mb-0">
+                    No es posible el prestamo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!---------------------------------->
+    <footer class="main-footer">
+      <div class="container container--flex">
+        <div class="column column--33">
+          <h3 class="column__title">¿Por que Visitarnos?</h2>
+            <p class="column__txt h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium eum
+              veniam,
+              perspiciatis quaerat possimus ex. Quisquam officia repudiandae dignissimos illo, accusamus voluptas animi
+              sequi explicabo sunt eum facilis vero!</p>
+        </div>
+        <div class="column column--33">
+          <h3 class="column__title">Contactanos</h2>
+            <p class="column__txt mb-1">Direccion</p>
+            <p class="column__txt mb-1">Teléfono</p>
+            <p class="column__txt mb-1">Correo</p>
+        </div>
+        <div class="column column--33">
+          <h3 class="column__title">Siguenos en redes sociales</h2>
+            <p class="column__txt mb-1"><a href="" class="icon-facebook">Siguenos en facebook</a></p>
+            <p class="column__txt mb-1"><a href="" class="icon-twitter">Siguenos en twitter</a></p>
+            <p class="column__txt mb-1"><a href="" class="icon-youtube">Siguenos en youtube</a></p>
+        </div>
+        <p class="copy">&copy; 2019 CuisineSoft | Todos los derrechos reservados</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="../bt4/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <!---->
+  <script src="./js/menu.js"></script>
+  <script src="./js/animateJC.js"></script>
+</body>
+
+</html>

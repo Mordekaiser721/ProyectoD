@@ -1,0 +1,18 @@
+@font-face{
+  font-family: "Pacifico";
+  src: url(../font/Pacifico-Regular.ttf);
+}
+.div-img {
+  box-shadow: 0px 0px 10px 2px black;
+}
+
+.img {
+  background: url(../img/userRegister.jpg);
+  height: 15vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Pacifico', cursive;
+}
+.navbar{
+  background: rgba(0, 0, 0, 0.869) !important;
+}

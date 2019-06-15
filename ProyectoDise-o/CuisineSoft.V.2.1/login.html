@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CDNs ... -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="bt4/css/bootstrap.min.css">
+  <!-- Estilos Propios -->
+  <link rel="stylesheet" href="css/estiloLogin.css">
+  <title>Ingreso CuisineSoft</title>
+</head>
+
+<body>
+  <div class="" id="cuerpo">
+    <div class="container-fluid">
+      <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image imagen"></div>
+        <div class="col-md-8 col-lg-6 elForm">
+          <div class="login d-flex align-items-center py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-8 mx-auto">
+                  <h3 class="login-heading mb-4">Bienvenido a CuisineSoft</h3>
+                  <form>
+                    <div class="form-label-group">
+                      <input type="text" id="codigoUsuario" class="form-control" placeholder="Email address" autofocus>
+                      <label for="codigoUsuario">Codigo</label>
+                    </div>
+
+                    <div class="form-label-group">
+                      <input type="password" id="contraseñaUsuario" class="form-control" placeholder="Password">
+                      <label for="contraseñaUsuario">Contraseña</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Recordarme</label>
+                    </div>
+                    <a href="./JefeCocina/index.html" id="loginJC"
+                      class="btn btn-lg btn-outline-success btn-block btn-login text-uppercase font-weight-bold mb-2"
+                      tabindex="-1" role="button" aria-disabled="true">Ingresar Jefe de Cocina</a>
+                    <a href="./Admin/userRegister.html" id="loginA"
+                      class="btn btn-lg btn-outline-success btn-block btn-login text-uppercase font-weight-bold mb-2"
+                      tabindex="-1" role="button" aria-disabled="true">Ingresar Administrador</a>
+                    <div class="text-center">
+                      <a class="small text-danger" id="btnOlvide" href="#">Olvide la contraseña</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./bt4/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Sweeralert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <!---->
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

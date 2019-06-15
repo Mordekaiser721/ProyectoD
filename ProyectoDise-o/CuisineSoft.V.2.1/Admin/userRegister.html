@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CDNS ... -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="../bt4/css/bootstrap.min.css">
+  <!-- Estilos Propios -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Registrar Usuario</title>
+</head>
+
+<body>
+  <!----------------------Navsito---------------------->
+  <div class="">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="../img/logoCuisine.png" width="28" height="30" class="d-inline-block align-top" alt="">
+        CuisineSoft
+      </a>
+      <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse font-weight-bold" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-4">
+          <a class="nav-item nav-link" href="#">Inicio</a>
+          <a class="nav-item nav-link text-primary active" href="./userRegister.html">Registrar Usuario</a>
+          <a class="nav-item nav-link" href="./consultarUsuarios.html">Consultar Usuarios</a>
+        </div>
+        <div class="navbar-nav mr-4 text-uppercase">
+          <a class="nav-item nav-link" href="../login.html">Cerrar Sesion</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--------------------Formulario-------------------->
+  <div class="" id="cuerpo">
+    <div class="container-fluid img d-flex justify-content-center align-items-center div-img" style="margin-top: 56px">
+      <h1 class="text-light">Registrar Usuarios</h1>
+    </div>
+    <div class="container">
+      <br>
+      <form id="form">
+        <h1 class="text-center">Formulario</h1>
+        <div class="row">
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="codigoSpan">Codigo Usuario</span>
+            </div>
+            <input id="codigo" type="text" class="form-control">
+          </div>
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="">Cargo</label>
+            </div>
+            <select class="custom-select" id="cargo">
+              <option selected id="opt">Elige...</option>
+              <option value="1">Jefe de Cocina</option>
+              <option value="2">Jefe de Zona</option>
+            </select>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6 col-lg-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">1.º Nombre</span>
+            </div>
+            <input id="primerNombre" type="text" class="form-control">
+          </div>
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6 col-lg-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">2.º Nombre</span>
+            </div>
+            <input id="sugundoNombre" type="text" class="form-control">
+          </div>
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6 col-lg-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">1.º Apellido</span>
+            </div>
+            <input id="primerApellido" type="text" class="form-control">
+          </div>
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6 col-lg-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">2.º Apellido</span>
+            </div>
+            <input id="segundoApellido" type="text" class="form-control">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="">Tipo Documento</label>
+            </div>
+            <select class="custom-select" id="tipoDocumento">
+              <option selected id="opt">Elige...</option>
+              <option value="1">Cédula de Ciudadanía</option>
+              <option value="2">Cédula Extranjera</option>
+            </select>
+          </div>
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Nº de Documento</span>
+            </div>
+            <input id="documento" type="text" class="form-control">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6 col-lg-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Nº de Telefono</span>
+            </div>
+            <input id="telefono" type="text" class="form-control">
+          </div>
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6 col-lg-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Nº de Celular</span>
+            </div>
+            <input id="celular" type="text" class="form-control">
+          </div>
+          <div class="input-group my-1 my-sm-1 col-sm-12 col-md-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Email</span>
+            </div>
+            <input id="email" type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <button id="btnRegistrar" type="submit" class="btn btn-outline-primary my-3 col-6">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="../bt4/js/bootstrap.min.js"></script>
+  <!-- Sweeralert -->
+  <script id="scriptSweet" src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <!-- Scipts Hechos -->
+  <script src="./js/animateAdmin.js"></script>
+  <script src="./js/validacion.js"></script>
+</body>
+
+</html>

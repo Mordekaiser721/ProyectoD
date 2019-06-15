@@ -1,0 +1,210 @@
+/*---------------------Estilos del Menú---------------------*/
+.menu_bar {
+  display: none;
+  color: black;
+}
+
+.header--nav {
+  width: 100%;
+}
+.submenu {
+  color: white;
+}
+.header--nav nav {
+  z-index: 1000;
+  max-width: 1000px;
+  width: 100%;
+	margin: 20px auto;
+}
+
+.header--nav nav ul {
+  background-color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 0px 40px;
+}
+
+.header--nav nav ul li {
+  border-block-start: 3px solid transparent;
+  border-block-end: 3px solid transparent;
+  border-inline-start: 8px solid transparent;
+  border-inline-end: 8px solid transparent;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+/*-----------*/
+.enlace-right {
+  float: right;
+}
+
+.header--nav nav ul li:hover {
+  border-block-start: 3px solid rgba(255, 115, 0, 0.589);
+  background: rgba(0, 0, 0);
+  color: white;
+  transition: 0.5s;
+}
+
+.header--nav nav ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 16px 0px;
+}
+
+.header--nav nav ul li a span {
+  margin-right: 10px;
+}
+
+.header--nav nav ul li .children1,
+.header--nav nav ul li .children2,
+.header--nav nav ul li .children3,
+.header--nav nav ul li .children4 {
+  display: none;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  width: 200px;
+  padding: 5px 0px;
+  z-index: 1000;
+}
+
+.header--nav nav ul li .children1 li,
+.header--nav nav ul li .children2 li,
+.header--nav nav ul li .children3 li,
+.header--nav nav ul li .children4 li {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.header--nav nav ul li .children1 li a,
+.header--nav nav ul li .children2 li a,
+.header--nav nav ul li .children3 li a,
+.header--nav nav ul li .children4 li a {
+  display: block;
+}
+
+/*---icon-dowm and icon-up Menu---*/
+.icon-circle-down,
+.icon-circle-up {
+  margin: 5px;
+  font-size: 0.7em;
+  color: white;
+  transition: 0.3s;
+}
+.header--nav nav ul li a:hover > .icon-circle-down {
+  color: rgba(255, 115, 0, 0.589);
+}
+
+@media screen and (max-width: 800px) {
+  .menu_bar {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+    top: 0;
+    background: white;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.9);
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .menu_bar span {
+    float: right;
+    font-size: 35px;
+  }
+
+  .header--nav nav {
+    background: black;
+    opacity: 0.9;
+    width: 100%;
+    height: calc(75% - 80px);
+    position: absolute;
+    margin: 0;
+    right: 100%;
+    overflow: scroll;
+    box-shadow: none;
+  }
+
+  .header--nav nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff
+  }
+  .header--nav nav ul li:hover{
+    color: #fff;
+  }
+
+  .header--nav nav ul li a {
+    display: block;
+  }
+  /*--------------------*/
+  .enlace-right {
+    width: 50%;
+    display: block;
+    text-align: right;
+    font-weight: bold;
+  }
+  /*---Icon Menu-Cross---*/
+  .icon-menu,
+  .icon-cross {
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .header--nav div a:active > .icon-menu {
+    animation-duration: 0.2s;
+    animation-name: slidein;
+  }
+  .header--nav div a:active > .icon-cross {
+    animation-duration: 0.2s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      transform: rotateZ(360deg);
+    }
+
+    to {
+      transform: rotateZ(0deg);
+    }
+  }
+  /*---*/
+
+  .header--nav nav ul li:hover .children1,
+  .header--nav nav ul li:hover .children2,
+  .header--nav nav ul li:hover .children3,
+  .header--nav nav ul li:hover .children4 {
+    display: none;
+  }
+
+  .header--nav nav ul li .children1,
+  .header--nav nav ul li .children2,
+  .header--nav nav ul li .children3,
+  .header--nav nav ul li .children4 {
+    width: 100%;
+    position: absolute;
+    background: white;
+  }
+
+  .header--nav nav ul li .children1 li a,
+  .header--nav nav ul li .children2 li a,
+  .header--nav nav ul li .children3 li a,
+  .header--nav nav ul li .children4 li a {
+    margin-left: 20px;
+    color: black;
+  }
+  .header--nav nav ul li .children1 li:hover > a,
+  .header--nav nav ul li .children2 li:hover > a,
+  .header--nav nav ul li .children3 li:hover > a,
+  .header--nav nav ul li .children4 li:hover > a {
+    color: white;
+  }
+}
